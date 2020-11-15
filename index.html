@@ -18,13 +18,10 @@ div {
   <body>
 
     <h1>This will be a part of the iframe</h1>
-    <div id="myDiv" onLoad="printDivId();"> </div>
+    <div id="myDiv"> Before clicking, div id is</div>
       <script>
         function printDivId(){
-          var message;
-          message = "Before clicking, div id is "
-          document.write("message");
-          document.getElementById('myDiv').innerHTML;
+          document.getElementById('myDiv').innerHTML += document.getElementById('myDiv').id;
         }
       </script>
     
